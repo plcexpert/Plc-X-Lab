@@ -5,10 +5,19 @@ Product page : http://www.plc-expert.com/product/plclab/
 
 ![alt tag](/plclab.jpg)
 
+# Hardware Features
+  * 4 buttons
+  * 4 LEDs
+  * Light sensor (analog)
+  * Temperature sensor (Digital - I2C)
+  * Potentiometer
+  * EEPROM (I2C)
+  * IrDa Receiver
+  * IrDa Transmitter
+  * LCD 16x2
+  * Servo motor
+
 # How to use example codes
-1) Download or clone this repository to your local drive. 
-2) Open example code in Arduino IDE
-3) Select board : Arduino Nano, respective serial port and click on upload.
-
-
-
+  * Download or clone this repository to your local drive. 
+  * Open example code in Arduino IDE
+  * Select board : Arduino Nano, respective serial port and click on upload.
