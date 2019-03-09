@@ -21,3 +21,17 @@ Product page : http://www.plc-expert.com/product/plclab/
   * Download or clone this repository to your local drive. 
   * Open example code in Arduino IDE
   * Select board : Arduino Nano, respective serial port and click on upload.
+
+# Examples
+  * 1. LED
+    This example code demonstrate to the user how to swtich LED diodes.
+
+  * 2. Button
+  
+  * 3. Poti
+
+  * 4. Photoresistor
+
+  * 5. Servo
+
+  * 6. LCD
