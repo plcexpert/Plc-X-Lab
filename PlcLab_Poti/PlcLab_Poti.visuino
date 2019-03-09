@@ -1,0 +1,216 @@
+{
+  "Version": "2",
+  "Product": "Visuino - Visual Arduino Programming",
+  "Units": [
+    {
+      "Name": "__OpenWireRootUnit__",
+      "*": [
+        {
+          "X": 256,
+          "Name": "Arduino",
+          "Instance": {
+            "AnalogInput": {
+              "*": [
+                {
+                  "+": "TArduinoAnalogOptionalAsDigitalInputChannel"
+                },
+                {
+                  "+": "TArduinoAnalogOptionalAsDigitalInputChannel"
+                }
+              ]
+            },
+            "Serial": {
+              "*": [
+                {
+                  "InputPin": {
+                    "SourcePins": [
+                      {
+                        "ID": "__OpenWireRootUnit__.MapRange1.OutputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoHardwareSerial"
+                }
+              ]
+            },
+            "+": "TArduinoBoard",
+            "AnalogInputReference": "Default",
+            "Modules": {
+              "*": [
+                {
+                  "+": "TArduinoEEPROMModule"
+                },
+                {
+                  "+": "TArduinoProcessorModule"
+                },
+                {
+                  "+": "TArduinoWatchdogTimerModule"
+                }
+              ]
+            },
+            "I2CChannels": {
+              "*": [
+                {
+                  "+": "TArduinoI2C"
+                }
+              ]
+            },
+            "Shields": {
+              "*": [
+                {
+                  "Buttons": {
+                    "*": [
+                      {
+                        "+": "TArduinoPLCLABButton1"
+                      },
+                      {
+                        "+": "TArduinoPLCLABButton2"
+                      },
+                      {
+                        "+": "TArduinoPLCLABButton3"
+                      },
+                      {
+                        "+": "TArduinoPLCLABButton4"
+                      }
+                    ]
+                  },
+                  "LEDs": {
+                    "*": [
+                      {
+                        "+": "TArduinoPLCLABDigitalLED1"
+                      },
+                      {
+                        "+": "TArduinoPLCLABDigitalLED2"
+                      },
+                      {
+                        "+": "TArduinoPLCLABDigitalLED3"
+                      },
+                      {
+                        "+": "TArduinoPLCLABDigitalLED4"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoPLCLABBreakoutShield",
+                  "Potentiometer": {
+                    "OutputPin": {
+                      "SinkPins": [
+                        {
+                          "ID": "__OpenWireRootUnit__.MapRange1.InputPin"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "Digital": {
+              "*": [
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMInterruptChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                }
+              ]
+            },
+            "SPIChannels": {
+              "*": [
+                {
+                  "+": "TArduinoSPI"
+                }
+              ]
+            },
+            "BoardType": "Arduino Nano"
+          },
+          "Type": "Component",
+          "Y": 256
+        },
+        {
+          "X": 688,
+          "Name": "MapRange1",
+          "Instance": {
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Serial[0].InputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Serial._Item0.InputPin"
+                }
+              ]
+            },
+            "InputPin": {
+              "SourcePin": {
+                "Name": "__OpenWireRootUnit__.Arduino.Shields.PLC-LAB.Potentiometer.OutputPin",
+                "ID": "__OpenWireRootUnit__.Arduino.Shields._Item0.Potentiometer.OutputPin"
+              }
+            },
+            "+": "TArduinoMapRange",
+            "OutputRange": {
+              "Max": 100
+            }
+          },
+          "Type": "Component",
+          "Y": 512
+        }
+      ],
+      "Type": "Diagram",
+      "Selection": [
+        "MapRange1"
+      ]
+    }
+  ],
+  "Content": "OpenWire Diagram"
+}

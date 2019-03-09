@@ -1,0 +1,265 @@
+{
+  "Version": "2",
+  "Product": "Visuino - Visual Arduino Programming",
+  "Units": [
+    {
+      "Name": "__OpenWireRootUnit__",
+      "*": [
+        {
+          "X": 544,
+          "Name": "Arduino",
+          "Instance": {
+            "AnalogInput": {
+              "*": [
+                {
+                  "+": "TArduinoAnalogOptionalAsDigitalInputChannel"
+                },
+                {
+                  "+": "TArduinoAnalogOptionalAsDigitalInputChannel"
+                }
+              ]
+            },
+            "Serial": {
+              "*": [
+                {
+                  "+": "TArduinoHardwareSerial"
+                }
+              ]
+            },
+            "+": "TArduinoBoard",
+            "AnalogInputReference": "Default",
+            "Modules": {
+              "*": [
+                {
+                  "+": "TArduinoEEPROMModule"
+                },
+                {
+                  "+": "TArduinoProcessorModule"
+                },
+                {
+                  "+": "TArduinoWatchdogTimerModule"
+                }
+              ]
+            },
+            "I2CChannels": {
+              "*": [
+                {
+                  "+": "TArduinoI2C"
+                }
+              ]
+            },
+            "Shields": {
+              "*": [
+                {
+                  "Buttons": {
+                    "*": [
+                      {
+                        "+": "TArduinoPLCLABButton1"
+                      },
+                      {
+                        "+": "TArduinoPLCLABButton2"
+                      },
+                      {
+                        "+": "TArduinoPLCLABButton3"
+                      },
+                      {
+                        "+": "TArduinoPLCLABButton4"
+                      }
+                    ]
+                  },
+                  "LEDs": {
+                    "*": [
+                      {
+                        "InputPin": {
+                          "SourcePin": {
+                            "ID": "__OpenWireRootUnit__.PulseGenerator1.OutputPin"
+                          }
+                        },
+                        "+": "TArduinoPLCLABDigitalLED1"
+                      },
+                      {
+                        "InputPin": {
+                          "SourcePin": {
+                            "ID": "__OpenWireRootUnit__.PulseGenerator2.OutputPin"
+                          }
+                        },
+                        "+": "TArduinoPLCLABDigitalLED2"
+                      },
+                      {
+                        "InputPin": {
+                          "SourcePin": {
+                            "ID": "__OpenWireRootUnit__.PulseGenerator3.OutputPin"
+                          }
+                        },
+                        "+": "TArduinoPLCLABDigitalLED3"
+                      },
+                      {
+                        "InputPin": {
+                          "SourcePin": {
+                            "ID": "__OpenWireRootUnit__.PulseGenerator4.OutputPin"
+                          }
+                        },
+                        "+": "TArduinoPLCLABDigitalLED4"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoPLCLABBreakoutShield"
+                }
+              ]
+            },
+            "Digital": {
+              "*": [
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMInterruptChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                }
+              ]
+            },
+            "SPIChannels": {
+              "*": [
+                {
+                  "+": "TArduinoSPI"
+                }
+              ]
+            },
+            "BoardType": "Arduino Nano"
+          },
+          "Type": "Component",
+          "Y": 256
+        },
+        {
+          "X": 256,
+          "Name": "PulseGenerator1",
+          "Instance": {
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Shields.PLC-LAB.LEDs[0].InputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Shields._Item0.LEDs._Item0.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoPulseGenerator"
+          },
+          "Type": "Component",
+          "Y": 1264
+        },
+        {
+          "X": 256,
+          "Name": "PulseGenerator2",
+          "Instance": {
+            "Frequency": 0.5,
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Shields.PLC-LAB.LEDs[1].InputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Shields._Item0.LEDs._Item1.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoPulseGenerator"
+          },
+          "Type": "Component",
+          "Y": 1328
+        },
+        {
+          "X": 256,
+          "Name": "PulseGenerator3",
+          "Instance": {
+            "Frequency": 5,
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Shields.PLC-LAB.LEDs[2].InputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Shields._Item0.LEDs._Item2.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoPulseGenerator"
+          },
+          "Type": "Component",
+          "Y": 1408
+        },
+        {
+          "X": 256,
+          "Name": "PulseGenerator4",
+          "Instance": {
+            "Frequency": 0.100000001490116,
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Shields.PLC-LAB.LEDs[3].InputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Shields._Item0.LEDs._Item3.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoPulseGenerator"
+          },
+          "Type": "Component",
+          "Y": 1472
+        }
+      ],
+      "Type": "Diagram",
+      "Selection": [
+        "PulseGenerator1"
+      ]
+    }
+  ],
+  "Content": "OpenWire Diagram"
+}
