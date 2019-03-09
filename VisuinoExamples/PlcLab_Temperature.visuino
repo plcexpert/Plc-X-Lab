@@ -1,0 +1,192 @@
+{
+  "Version": "2",
+  "Product": "Visuino - Visual Arduino Programming",
+  "Units": [
+    {
+      "Name": "__OpenWireRootUnit__",
+      "*": [
+        {
+          "X": 256,
+          "Name": "Arduino",
+          "Instance": {
+            "AnalogInput": {
+              "*": [
+                {
+                  "+": "TArduinoAnalogOptionalAsDigitalInputChannel"
+                },
+                {
+                  "+": "TArduinoAnalogOptionalAsDigitalInputChannel"
+                }
+              ]
+            },
+            "Serial": {
+              "*": [
+                {
+                  "InputPin": {
+                    "SourcePins": [
+                      {
+                        "Name": "__OpenWireRootUnit__.Arduino.Shields.PLC-LAB.Thermometer.OutputPin",
+                        "ID": "__OpenWireRootUnit__.Arduino.Shields._Item0.Thermometer.OutputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoHardwareSerial"
+                }
+              ]
+            },
+            "+": "TArduinoBoard",
+            "AnalogInputReference": "Default",
+            "Modules": {
+              "*": [
+                {
+                  "+": "TArduinoEEPROMModule"
+                },
+                {
+                  "+": "TArduinoProcessorModule"
+                },
+                {
+                  "+": "TArduinoWatchdogTimerModule"
+                }
+              ]
+            },
+            "I2CChannels": {
+              "*": [
+                {
+                  "+": "TArduinoI2C"
+                }
+              ]
+            },
+            "Shields": {
+              "*": [
+                {
+                  "Buttons": {
+                    "*": [
+                      {
+                        "+": "TArduinoPLCLABButton1"
+                      },
+                      {
+                        "+": "TArduinoPLCLABButton2"
+                      },
+                      {
+                        "+": "TArduinoPLCLABButton3"
+                      },
+                      {
+                        "+": "TArduinoPLCLABButton4"
+                      }
+                    ]
+                  },
+                  "LEDs": {
+                    "*": [
+                      {
+                        "+": "TArduinoPLCLABDigitalLED1"
+                      },
+                      {
+                        "+": "TArduinoPLCLABDigitalLED2"
+                      },
+                      {
+                        "+": "TArduinoPLCLABDigitalLED3"
+                      },
+                      {
+                        "+": "TArduinoPLCLABDigitalLED4"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoPLCLABBreakoutShield",
+                  "Thermometer": {
+                    "OutputPin": {
+                      "SinkPins": [
+                        {
+                          "Name": "__OpenWireRootUnit__.Arduino.Serial[0].InputPin",
+                          "ID": "__OpenWireRootUnit__.Arduino.Serial._Item0.InputPin"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "Digital": {
+              "*": [
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMInterruptChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                }
+              ]
+            },
+            "SPIChannels": {
+              "*": [
+                {
+                  "+": "TArduinoSPI"
+                }
+              ]
+            },
+            "BoardType": "Arduino Nano"
+          },
+          "Type": "Component",
+          "Y": 256
+        }
+      ],
+      "Type": "Diagram",
+      "Selection": [
+        "Arduino"
+      ]
+    }
+  ],
+  "Content": "OpenWire Diagram"
+}
