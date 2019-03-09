@@ -1,0 +1,305 @@
+{
+  "Version": "2",
+  "Product": "Visuino - Visual Arduino Programming",
+  "Units": [
+    {
+      "Name": "__OpenWireRootUnit__",
+      "*": [
+        {
+          "X": 256,
+          "Name": "Arduino",
+          "Instance": {
+            "AnalogInput": {
+              "*": [
+                {
+                  "+": "TArduinoAnalogOptionalAsDigitalInputChannel"
+                },
+                {
+                  "+": "TArduinoAnalogOptionalAsDigitalInputChannel"
+                }
+              ]
+            },
+            "Serial": {
+              "*": [
+                {
+                  "+": "TArduinoHardwareSerial"
+                }
+              ]
+            },
+            "+": "TArduinoBoard",
+            "AnalogInputReference": "Default",
+            "Modules": {
+              "*": [
+                {
+                  "+": "TArduinoEEPROMModule"
+                },
+                {
+                  "+": "TArduinoProcessorModule"
+                },
+                {
+                  "+": "TArduinoWatchdogTimerModule"
+                }
+              ]
+            },
+            "I2CChannels": {
+              "*": [
+                {
+                  "+": "TArduinoI2C"
+                }
+              ]
+            },
+            "Shields": {
+              "*": [
+                {
+                  "Buttons": {
+                    "*": [
+                      {
+                        "OutputPin": {
+                          "SinkPins": [
+                            {
+                              "ID": "__OpenWireRootUnit__.RepeatButton1.InputPin"
+                            }
+                          ]
+                        },
+                        "+": "TArduinoPLCLABButton1"
+                      },
+                      {
+                        "OutputPin": {
+                          "SinkPins": [
+                            {
+                              "ID": "__OpenWireRootUnit__.RepeatButton2.InputPin"
+                            }
+                          ]
+                        },
+                        "+": "TArduinoPLCLABButton2"
+                      },
+                      {
+                        "+": "TArduinoPLCLABButton3"
+                      },
+                      {
+                        "+": "TArduinoPLCLABButton4"
+                      }
+                    ]
+                  },
+                  "LEDs": {
+                    "*": [
+                      {
+                        "+": "TArduinoPLCLABDigitalLED1"
+                      },
+                      {
+                        "+": "TArduinoPLCLABDigitalLED2"
+                      },
+                      {
+                        "+": "TArduinoPLCLABDigitalLED3"
+                      },
+                      {
+                        "+": "TArduinoPLCLABDigitalLED4"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoPLCLABBreakoutShield",
+                  "Servo": {
+                    "InputPin": {
+                      "SourcePin": {
+                        "ID": "__OpenWireRootUnit__.MapRange1.OutputPin"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "Digital": {
+              "*": [
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMInterruptChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                }
+              ]
+            },
+            "SPIChannels": {
+              "*": [
+                {
+                  "+": "TArduinoSPI"
+                }
+              ]
+            },
+            "BoardType": "Arduino Nano"
+          },
+          "Type": "Component",
+          "Y": 256
+        },
+        {
+          "X": 656,
+          "Name": "RepeatButton1",
+          "Instance": {
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "ID": "__OpenWireRootUnit__.UpDownCounter1.UpInputPin"
+                }
+              ]
+            },
+            "InputPin": {
+              "SourcePin": {
+                "Name": "__OpenWireRootUnit__.Arduino.Shields.PLC-LAB.Buttons[0].OutputPin",
+                "ID": "__OpenWireRootUnit__.Arduino.Shields._Item0.Buttons._Item0.OutputPin"
+              }
+            },
+            "+": "TArduinoAutoRepeatButton"
+          },
+          "Type": "Component",
+          "Y": 1264
+        },
+        {
+          "X": 656,
+          "Name": "RepeatButton2",
+          "Instance": {
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "ID": "__OpenWireRootUnit__.UpDownCounter1.DownInputPin"
+                }
+              ]
+            },
+            "InputPin": {
+              "SourcePin": {
+                "Name": "__OpenWireRootUnit__.Arduino.Shields.PLC-LAB.Buttons[1].OutputPin",
+                "ID": "__OpenWireRootUnit__.Arduino.Shields._Item0.Buttons._Item1.OutputPin"
+              }
+            },
+            "+": "TArduinoAutoRepeatButton"
+          },
+          "Type": "Component",
+          "Y": 1328
+        },
+        {
+          "X": 800,
+          "Name": "UpDownCounter1",
+          "Instance": {
+            "Max": {
+              "Value": 100,
+              "RollOver": false
+            },
+            "Min": {
+              "Value": 0,
+              "RollOver": false
+            },
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "ID": "__OpenWireRootUnit__.MapRange1.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoUpDownCounter",
+            "DownInputPin": {
+              "SourcePins": [
+                {
+                  "ID": "__OpenWireRootUnit__.RepeatButton2.OutputPin"
+                }
+              ]
+            },
+            "UpInputPin": {
+              "SourcePins": [
+                {
+                  "ID": "__OpenWireRootUnit__.RepeatButton1.OutputPin"
+                }
+              ]
+            }
+          },
+          "Type": "Component",
+          "Y": 1248
+        },
+        {
+          "X": 992,
+          "Name": "MapRange1",
+          "Instance": {
+            "InputRange": {
+              "Max": 100
+            },
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Shields.PLC-LAB.Servo.InputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Shields._Item0.Servo.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoMapRange",
+            "InputPin": {
+              "SourcePin": {
+                "ID": "__OpenWireRootUnit__.UpDownCounter1.OutputPin"
+              }
+            }
+          },
+          "Type": "Component",
+          "Y": 1248
+        }
+      ],
+      "Type": "Diagram",
+      "Selection": [
+        "RepeatButton1",
+        "RepeatButton2",
+        "UpDownCounter1",
+        "MapRange1"
+      ]
+    }
+  ],
+  "Content": "OpenWire Diagram"
+}
