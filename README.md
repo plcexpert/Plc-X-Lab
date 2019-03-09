@@ -59,13 +59,13 @@ This example shows you three features usage in one code. CPU read the value from
 **11. Temprature**  
 We used on LAB digital temperature sensor connected to the I2C bus. This example introduces you how to use I2C with temperarute sensor.
 
-**11. EEPROM**  
+**12. EEPROM**  
 I2C bus allows you to connect several devices, this type of memory is very often used for storing operating or system configuration 
 data. Code stores to the memory random number and reads it back again then sends this value to serial port.
 
-**12. Irda Receiver**  
+**13. Irda Receiver**  
 Infra red trasmitters are used in remote controller (TV for example). Infra red reader diode is built in LAB, you can used our remote control to learn how this feature works.
 
-**13. Irda sender**  
+**14. Irda sender**  
 LAB also includes infra red transmitter to send out data or values. We recommend to use two LAB where the one will send data and the second will receive data. Due to this simple example is very easy to demonstrate how works communication between two different devices.
 
