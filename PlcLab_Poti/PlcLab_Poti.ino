@@ -21,7 +21,9 @@ void loop(){
   Serial.print(analogValue);
 
   // Percentage
-  int percentValue = (analogValue)*100L/(1023);
+  int percentValue = map(analogValue, 0, 1023, 0, 100)
+  
+  ()*100L/(1023);
   
   Serial.print("       Analog percentage = ");
   Serial.println(percentValue);
