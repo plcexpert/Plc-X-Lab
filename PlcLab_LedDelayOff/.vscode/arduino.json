@@ -1,0 +1,7 @@
+{
+    "board": "arduino:avr:nano",
+    "configuration": "cpu=atmega328",
+    "port": "COM7",
+    "programmer": "USBasp",
+    "sketch": "PlcLab_LedDelayOff.ino"
+}
